@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "eleventy --pathprefix 'playground-eleventy'",
     "serve": "eleventy --serve",
     "start": "eleventy --serve"
   },
