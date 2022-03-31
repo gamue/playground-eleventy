@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Styling Guide</title>
+    <link rel="stylesheet" href="/playground-eleventy/styles/main.css" />
+</head>
+<body>
+    <header>
+        <ul>
+    <li><a href="/playground-eleventy/">Home</a></li>
+    <li><a href="/playground-eleventy/style">Styling</a></li>
+    <li><a href="/playground-eleventy/about">About</a></li>
+</ul>
+    </header>
+    <main class="container mx-auto prose lg:prose-xl">
+        <h1>Styling Guide</h1>
+        <h1>h1 headline</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed purus a enim placerat consectetur.
+Vivamus sit amet velit metus. Donec eget tincidunt leo. Curabitur felis lacus, commodo eget turpis id, lacinia dignissim nibh.
+Proin suscipit fringilla felis, at pharetra magna blandit sed. Proin porta, quam sed tempus sodales, massa lacus iaculis ipsum,
+et porttitor risus ipsum non arcu. Aenean tempor libero orci, nec ornare quam porta id. Pellentesque ultrices feugiat tincidunt.
+Integer tempor vestibulum quam, sit amet ornare libero vehicula nec. Vestibulum egestas efficitur metus ac congue.</p>
+<p>Vivamus vestibulum magna vel dui auctor vestibulum. Fusce feugiat bibendum eros, eu egestas turpis sollicitudin a.
+Etiam porttitor facilisis justo, efficitur tempor sapien commodo a. Suspendisse orci tellus, laoreet in consectetur eget,
+vehicula et justo. Sed urna nunc, vestibulum id dapibus et, tempus id massa. Proin tellus nisi, tempor non venenatis eget, malesuada ut nibh.
+In ut augue sit amet ante dignissim pharetra id ac odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+Quisque tincidunt neque ipsum, sed aliquam felis hendrerit quis. Quisque elementum ac magna at accumsan. Curabitur eget iaculis purus.
+Sed tempor purus eu egestas volutpat. Ut laoreet orci a pulvinar vulputate. Quisque ut turpis et ex sodales ultrices. In nec felis nisi.
+Etiam non augue porta diam commodo gravida sit amet id nibh.</p>
+<h2>h2 headline</h2>
+<p>Ut vulputate, est ac fermentum sagittis, sapien justo lacinia lectus, vitae tincidunt justo nulla ut ante. Praesent et tempus eros.
+Pellentesque bibendum, erat vel sollicitudin molestie, risus quam fringilla risus, sit amet rhoncus diam magna sit amet metus.
+Nulla nec condimentum velit, ac viverra libero. Vivamus feugiat, neque ut dictum gravida, diam libero placerat nibh, eget dictum diam nulla ac turpis.
+Pellentesque fringilla tristique bibendum. Sed a quam eu magna suscipit varius vel luctus dui. Sed quis eleifend risus.</p>
+<h3>h3 headline</h3>
+<p>Ut vulputate, est ac fermentum sagittis, sapien justo lacinia lectus, vitae tincidunt justo nulla ut ante. Praesent et tempus eros.
+Pellentesque bibendum, erat vel sollicitudin molestie, risus quam fringilla risus, sit amet rhoncus diam magna sit amet metus.</p>
+<h4>h4 headline</h4>
+<p>Ut vulputate, est ac fermentum sagittis, sapien justo lacinia lectus, vitae tincidunt justo nulla ut ante. Praesent et tempus eros.
+Pellentesque bibendum, erat vel sollicitudin molestie, risus quam fringilla risus, sit amet rhoncus diam magna sit amet metus.</p>
+<ul>
+<li>List <strong>Bold</strong></li>
+<li>List <em>Italic</em></li>
+<li>List <em><strong>Bold and Italic</strong></em></li>
+<li>List <a href="#">Link</a>
+<ul>
+<li>SubItem <code>inline code</code></li>
+<li>SubItem</li>
+</ul>
+</li>
+</ul>
+<p>Ut vulputate, est ac fermentum sagittis, sapien justo lacinia lectus, vitae tincidunt justo nulla ut ante. Praesent et tempus eros.
+Pellentesque bibendum, erat</p>
+<ol>
+<li>List</li>
+<li>List
+<ol>
+<li>Sub-Element</li>
+<li>Sub-Element</li>
+</ol>
+</li>
+<li>List</li>
+<li>List</li>
+</ol>
+<p>Ut vulputate, est ac fermentum sagittis, sapien justo lacinia lectus, vitae tincidunt justo nulla ut ante.</p>
+<blockquote>
+<p>Quote: Ut vulputate, est ac fermentum sagittis, sapien justo lacinia lectus, vitae tincidunt justo nulla ut ante. Praesent et tempus eros.
+Pellentesque bibendum, erat vel sollicitudin molestie, risus quam fringilla risus, sit amet rhoncus diam magna sit amet metus.
+Nulla nec condimentum velit, ac viverra libero. Vivamus feugiat, neque ut dictum gravida, diam libero placerat nibh, eget dictum diam nulla ac turpis.</p>
+</blockquote>
+<p>Ut vulputate, est ac fermentum sagittis, sapien justo lacinia lectus, vitae tincidunt justo nulla ut ante.
+{: .notice}</p>
+<p>Info-Box: Ut vulputate, est ac fermentum sagittis, sapien justo lacinia lectus, vitae tincidunt justo nulla ut ante.
+{: .notice--info}</p>
+<p><strong>Warning-Box:</strong> Ut vulputate, est ac fermentum sagittis, sapien justo lacinia lectus, vitae tincidunt justo nulla ut ante.
+{: .notice--warning}</p>
+<p><a href="#">Button Primary</a>{: .btn}</p>
+<p>Ut vulputate, est ac fermentum sagittis, sapien justo lacinia lectus, vitae tincidunt justo nulla ut ante.</p>
+<pre class="language-text"><code class="language-text">├── /2011-09-05 Köln<br>├── /2019-04 Belize<br>├── /2019-12 Paris<br>├── ...</code></pre>
+<pre class="language-js"><code class="language-js"><span class="token keyword">const</span> chalk <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'chalk'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>chalk<span class="token punctuation">.</span><span class="token function">blue</span><span class="token punctuation">(</span><span class="token string">'Hello world!'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">on</span><span class="token punctuation">:</span><br> <span class="token key atrule">push</span><span class="token punctuation">:</span><br>   <span class="token key atrule">branches</span><span class="token punctuation">:</span><br>     <span class="token punctuation">-</span> master</code></pre>
+<pre class="language-xml"><code class="language-xml"><span class="token prolog">&lt;?xml version="1.0" encoding="utf-8"?></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>packages</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>package</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>7zip<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>package</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>irfanview<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>package</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>vlc<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>packages</span><span class="token punctuation">></span></span></code></pre>
+<p>Item
+: Ut vulputate, est ac fermentum sagittis, sapien justo lacinia lectus, vitae tincidunt justo nulla ut ante.</p>
+<p>Item
+: Ut vulputate, est ac fermentum sagittis, sapien justo lacinia lectus, vitae tincidunt justo nulla ut ante.</p>
+<h1>Gallery Single</h1>
+<h1>Gallery Half</h1>
+<h1>Gallery Third</h1>
+<h1>Gallery Quarter</h1>
+<h1>Einzelbild</h1>
+<p>Vivamus vestibulum magna vel dui auctor vestibulum. Fusce feugiat bibendum eros, eu egestas turpis sollicitudin a.
+Etiam porttitor facilisis justo, efficitur tempor sapien commodo a. Suspendisse orci tellus, laoreet in consectetur eget,
+vehicula et justo. Sed urna nunc, vestibulum id dapibus et, tempus id massa. Proin tellus nisi, tempor non venenatis eget, malesuada ut nibh.
+In ut augue sit amet ante dignissim pharetra id ac odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+Quisque tincidunt neque</p>
+
+    </main>
+</body>
+</html>
