@@ -123,7 +123,7 @@ Item
 
 
 # Einzelbild
-
+![](../assets/Albanien_233.jpg)
 
 
 Vivamus vestibulum magna vel dui auctor vestibulum. Fusce feugiat bibendum eros, eu egestas turpis sollicitudin a.

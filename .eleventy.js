@@ -13,6 +13,8 @@ module.exports = function(eleventyConfig) {
   let markdownLib = markdownIt(options).use(markdownItAttrs);
   eleventyConfig.setLibrary("md", markdownLib);
 
+  eleventyConfig.addPassthroughCopy("src/assets");
+
   return {
     dir: {
       input: 'src',
