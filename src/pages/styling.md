@@ -72,7 +72,7 @@ Info-Box: Ut vulputate, est ac fermentum sagittis, sapien justo lacinia lectus, 
 
 Ut vulputate, est ac fermentum sagittis, sapien justo lacinia lectus, vitae tincidunt justo nulla ut ante.
 
-```
+```text
 ├── /2011-09-05 Köln
 ├── /2019-04 Belize
 ├── /2019-12 Paris
