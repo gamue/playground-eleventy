@@ -120,7 +120,7 @@ Item
 
 # Gallery Quarter
 
-{% respimg "https://gamue.github.io/playground-eleventy/assets/Albanien_233.jpg" "Meine Rucksäcke" %}
+{% respimg "/assets/Albanien_233.jpg" "Meine Rucksäcke" %}
 
 # Einzelbild
 ![](../assets/Albanien_233.jpg)

@@ -6,7 +6,7 @@
   "scripts": {
     "tailwind:dev": "postcss src/styles/main.css -o _site/styles/main.css --watch",
     "tailwind:prod": "NODE_ENV=production postcss src/styles/main.css -o _site/styles/main.css",
-    "build": "eleventy --pathprefix 'playground-eleventy' && npm run tailwind:prod",
+    "build": "NODE_ENV=production eleventy --pathprefix 'playground-eleventy' && npm run tailwind:prod",
     "serve": "eleventy --serve",
     "start": "concurrently \"yarn run tailwind:dev\" \"yarn run serve\""
   },
@@ -18,7 +18,6 @@
     "@tailwindcss/typography": "^0.5.2",
     "autoprefixer": "^10.4.4",
     "concurrently": "^7.0.0",
-    "eleventy-plugin-respimg": "^0.1.2",
     "markdown-it-attrs": "^4.1.3",
     "postcss-cli": "^9.1.0",
     "postcss-import": "^14.1.0",
