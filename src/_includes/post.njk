@@ -7,7 +7,7 @@
 </head>
 <body>
     <header>
-        {% include "header.html" %}
+        {% include "header.njk" %}
     </header>
     <main class="container mx-auto prose lg:prose-xl">
         <h1>{{ title }}</h1>
@@ -15,7 +15,7 @@
 
         <ul>
         {% for category in categories %}
-            <li><a href="../category/{{ category | downcase | url }}">{{ category }}</a></li>
+            <li><a href="../category/{{ category | lower | url }}">{{ category }}</a></li>
         {% endfor %}
         {% for tag in tags %}
             {% if tag != 'posts' %}
@@ -24,7 +24,7 @@
         {% endfor %}
         </ul>
 
-        {{ content }}
+        {{ content  | safe }}
     </main>
 </body>
 </html>

@@ -1,6 +1,6 @@
 ---
 title: Homepage
-layout: base.html
+layout: base.njk
 ---
 
 Hello, World!
