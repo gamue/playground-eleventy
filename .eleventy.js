@@ -2,6 +2,14 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const lodash = require("lodash");
 
 module.exports = function(eleventyConfig) {
+
+  console.log("env: " + process.env.NODE_ENV);
+  if(process.env.NODE_ENV === 'production'){
+    console.log("prod-build");
+  }else{
+    console.log("dev-build");
+  }
+
   eleventyConfig.addPlugin(syntaxHighlight);
 
   let markdownIt = require("markdown-it");
