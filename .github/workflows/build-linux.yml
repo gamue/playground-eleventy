@@ -1,11 +1,11 @@
-name: Build and deploy to GitHub Pages
+name: Build on Linux
 
 on:
   push:
     branches: [ win ]
 
 jobs:
-  github-pages:
+  build-linux:
     runs-on: ubuntu-20.04
 
     steps:

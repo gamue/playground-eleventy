@@ -1,11 +1,11 @@
-name: Build and deploy to GitHub Pages
+name: Build on Windows
 
 on:
   push:
     branches: [ win ]
 
 jobs:
-  github-pages:
+  build-win:
     runs-on: windows-2022
 
     steps:

@@ -3,8 +3,8 @@ const lodash = require("lodash");
 
 module.exports = function(eleventyConfig) {
 
-  console.log("env: " + process.env.NODE_ENV);
-  if(JSON.stringify(process.env.NODE_ENV).trim() === JSON.stringify('production')){
+  console.log("env: '" + process.env.NODE_ENV + "'");
+  if(process.env.NODE_ENV?.trim() === 'production'){
     console.log("prod-build");
   }else{
     console.log("dev-build");
